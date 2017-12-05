@@ -2,7 +2,7 @@
 layout: blog
 banana: true
 category: 巴拉巴拉小魔仙
-title:  Redis,Memcache的区别和具体应用场景及选择
+title:  巴拉巴拉小魔仙
 date:   2017-07-30 10:06:42
 background-image: http://ot1cc1u9t.bkt.clouddn.com/17-8-1/24280498.jpg
 tags:
