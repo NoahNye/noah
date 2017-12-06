@@ -1,14 +1,14 @@
 # ----------- CONFIGURABLE START -----------
-title:            "LiberXue|FullStack|独立开发者|jekyll blog|GitHub blog"
+title:            "NoahNye|NewHere|独立开发者|jekyll blog|GitHub blog"
 description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
 url:              "https://noahnye.github.io/noah/" # 域名
-signoff:          "LiberXue" # Your name
+signoff:          "阿诺" # Your name
 facebook_appid:   #facebook_id
 google_analytics: UA-101222464-1
 share:            true 
 # 分页
 paginate: 15
-paginate_path: "liberxuepage:num"
+paginate_path: "noahnyepage:num"
 gems: [jekyll-paginate]
 links:
   - name:         首页
