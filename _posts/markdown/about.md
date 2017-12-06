@@ -1,3 +1,15 @@
+---
+layout: blog
+title: demo
+description: "DEMO1"
+tags: 
+- 简述
+- 关于
+- 坐井观天阔
+redirect_from:
+  - /about/
+---
+
 # 这是一级标题
 ## 这是二级标题
 ### 这是三级标题
@@ -36,11 +48,13 @@
 
 
 ## 表格
+
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
+
 
 表格体现有点麻烦，这里就直接复制了\
 “| Tables      | Are           | Cool  |\

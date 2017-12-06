@@ -1,10 +1,10 @@
 # ----------- CONFIGURABLE START -----------
-title:            "NoahNye|NewHere|独立开发者|jekyll blog|GitHub blog"
-description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
-url:              "https://noahnye.github.io/noah/" # 域名
+title:            "NoahNye|NewHere|小菜菜|jekyll blog|GitHub blog"
+description:      "Full Stack独立开发者|欢迎来到 NoahNye「角落」侃侃理想、谈谈人生、敲敲代码。"
+url:              "noahnye.tk" # 域名
 signoff:          "阿诺" # Your name
 facebook_appid:   #facebook_id
-google_analytics: UA-101222464-1
+google_analytics: UA-110796272-1
 share:            true 
 # 分页
 paginate: 15
