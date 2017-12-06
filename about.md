@@ -11,8 +11,7 @@ redirect_from:
   - /about/
 ---
 
-##
-本网站依据该up开源主题改造，如您有兴趣请[访问](https://github.com/Liberxue/liberxue.github.io)或 Fork
+## 本网站依据该up开源主题改造，如您有兴趣请[访问](https://github.com/Liberxue/liberxue.github.io) 或 Fork
  <iframe src="http://ghbtns.com/github-btn.html?user=liberxue&repo=liberxue.github.io&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
  
 
