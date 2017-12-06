@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 关于LiberXue
+title: 本博客由LiberXue改装！
 description: "本博客由LiberXue改装！"
 data: 2017-08-05 09:19:11
 tags: 
