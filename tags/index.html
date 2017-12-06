@@ -2,35 +2,46 @@
 title: 全部标签
 description: "标签分类的博文"
 ---
-
-<div class="main-content index-page clearfix ">
-	<div class="post-lists">
-		<div class="post-lists-body">
-      {% for posts in paginator.posts %}
-		<div class="post-list-item">
-				<div class="post-list-item-container">
-					 <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
-          	<a href="{{ posts.url }}">
-	             <div class="item-desc">
-		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
-						</div>
-					</a>
-					<div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
-					<div class="item-slant">	<div class="noahnye-title">
-				原创
-				</div></div>
-					<div class="item-label">
-						<div class="item-title"><a href="{{ posts.url }}" title="访问 {{ posts.title }}">{{ posts.title }}</a></div>
-						<div class="item-meta clearfix">
-						<div class="item-meta-ico bg-ico-book" style="background: url('style/images/bg-ico.png') no-repeat;background-size: 40px auto;"></div>
-             <div class="item-meta-cat">
-				 <a href="/tags#{{ posts.category }}" title="访问 {{ posts.category }}" data-hover="{{ posts.category }}">{{ posts.category }}</a>
-				 <a href="/archives#{{ posts.date | date: "%Y"}}" title="访问 {{ posts.date | date: "%Y"}}" data-hover="{{ posts.date | date: "%F %H:%M"}}">{{ posts.date | date: "%F %H:%M"}}</a></div>
+<div class="main-content archive-page clearfix">
+  {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags_list = site_tags | split:',' | sort %}
+    <h3 class="post-title" itemprop="name headline">标签分类的博文--点击自动查找相应`Tags`</h3>
+											 <div class="post-data">
+			 						  <div class="post-tags">
+  {% for item in (0..site.tags.size)  %}{% unless forloop.last %}
+    {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+			<a href="#{{ this_word }}">{{ this_word }} <span>({{ site.tags[this_word].size }})个</span>
+								</a>
+		{% endunless %}{% endfor %}					
+		</div>	
+	</div>		
+	</div>	
+<div class="main-content archive-page" >
+{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+	{% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+     <div id="{{ this_word }}" class="post-lists" id="{{ this_word }}">
+    <div class="categorys-item">
+         <div class="categorys-title">
+  {{ this_word }} : {{ site.tags[this_word].size }}
+   </div>
+    {% for post in site.tags[this_word] %}{% if post.title != null %}
+    			<div class="post-list-item" >
+					<div class="post-list-item-container">
+						<div class="item-label">
+							<div class="item-title" >
+								<a href="{{ site.url }}{{ post.url }}" data-hover="{{ post.title }}">{{ post.title }}</a>
+							</div>
+							<div class="item-meta clearfix">
+								<div class="item-meta-date">
+								<a href="/archives#{{ post.date | date: "%Y"}}" data-hover="{{ post.date | date: "%F %H:%M:%S "}}">	{{ post.date | date: "%F %H:%M:%S "}}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/archives#{{ post.date | date: "%Y"}}" data-hover="{{ post.category }}">{{ post.category }}</a>   
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-      </div>
-       {% endfor %}
+        </div>  
+          {% endif %}{% endfor %}
+   	</div>
 	</div>
-	</div>
-  {% include pagination.html %}
+
+{% endunless %}{% endfor %}
+</div>
