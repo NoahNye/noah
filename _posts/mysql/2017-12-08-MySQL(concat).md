@@ -3,7 +3,7 @@ layout: blog
 istop: true
 category: MySQL
 title:  MySQL语句（concat）
-date:   2017-12-08 18:11:00
+date:   2017-12-8 18:06:42
 background-image: https://i.loli.net/2017/12/08/5a2a5ed76e7dc.jpg
 
 tags:
@@ -18,4 +18,3 @@ tags:
 
 `SELECT CONCAT (NAME,'(',wins,')') AS USER  FROM al_winner WHERE wins >=20`
 ![concat](https://i.loli.net/2017/12/08/5a2a633eeadd2.png)
-
