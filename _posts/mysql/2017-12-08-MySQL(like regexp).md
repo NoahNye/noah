@@ -12,16 +12,20 @@ tags:
 ---
 # <center>LIKE通配符（通过部分已知量查询匹配）
 ***
-> %：匹配任意长度任意值。\
+> %：匹配任意长度任意值。
+
+
 > _ ：匹配单个任意值。
+
 ***
-> 进行LIKE 前后%，_查询：`SELECT NAME FROM al_winner WHERE NAME LIKE '%Aaro_'`
+进行LIKE 前后%，_查询：`SELECT NAME FROM al_winner WHERE NAME LIKE '%Aaro_'`
+
 ![MySQL](https://i.loli.net/2017/12/08/5a2a5b9fde563.png)
 ***
 
 
 # <center>REGEXP正则表达式查询
-> 进行REGEXP OR查询 `SELECT NAME FROM al_winner WHERE NAME REGEXP 'SELE|MOYER'`
+进行REGEXP OR查询 `SELECT NAME FROM al_winner WHERE NAME REGEXP 'SELE|MOYER'`
 
 ![MySQL](https://i.loli.net/2017/12/08/5a2a5bc19283f.png)
 
