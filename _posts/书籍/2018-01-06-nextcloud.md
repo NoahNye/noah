@@ -11,7 +11,9 @@ tags:
 - docker
 - nextcloud
 ---
->> 本文初衷于通过教程以巩固自己的知识。
+ 本文初衷于通过教程以巩固自己的知识。
+
+***
 
 # Linux下通过docker安装私有网盘nextcloud
 
@@ -29,12 +31,16 @@ tags:
 `yum install epel-release`  
 `yum install docker`  
 `service docker start`  
+
 ***
+
 ### 2.安装docker-compose:
 
 `curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 && chmod +x /usr/local/bin/docker-compose`
+
 ***
+
 ## 3.创建nextcloud容器并启动：
 ### 创建nextcloud容器文件夹并创建nextcloud网络
 
@@ -102,13 +108,17 @@ tags:
 
 ![类似于这样](https://i.loli.net/2018/01/05/5a4f99eeaf70f.png)
 
+***
+
 ### 启动容器：
 `docker-compose up -d`
 ![启动效果](https://i.loli.net/2018/01/05/5a4f9d2b3f719.png)
 
 
 这里有两个错误是因为我的主机已经有一个网站在运行了，80端口被占用。如果你的主机80端口没被占用应该不会出现错误，但不碍事，最后还是能运行。XD
+
 ***
+
 ## 运行：
 通过主机IP(域名):2333或者app访问你的nextcloud
 ![效果图](https://s1.ax1x.com/2018/01/05/pAvt9x.png)
