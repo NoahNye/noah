@@ -3,11 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://luyibo.tk/categories/</loc>
+    <loc>https://luyibo.tk/post/first/</loc>
+    <lastmod>2020-06-05T09:58:08+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://luyibo.tk/</loc>
+    <lastmod>2020-06-05T09:58:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luyibo.tk/post/</loc>
+    <lastmod>2020-06-05T09:58:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luyibo.tk/categories/</loc>
   </url>
   
   <url>
